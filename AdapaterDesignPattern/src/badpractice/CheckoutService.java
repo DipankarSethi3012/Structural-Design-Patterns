@@ -1,0 +1,15 @@
+package badpractice;
+
+//client class
+//use payment gateway interface to make payment
+public class CheckoutService {
+    private PaymentGateway paymentGateway;
+
+    public CheckoutService(PaymentGateway paymentGateway) {
+        this.paymentGateway = paymentGateway;
+    }
+
+    public void pay(String orderId, double amount) {
+        paymentGateway.pay(orderId, amount);
+    }
+}
