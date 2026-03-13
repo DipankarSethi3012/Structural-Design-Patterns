@@ -1,0 +1,6 @@
+package goodpractice;
+
+public interface CartItem {
+    double getPrice();
+    void display(String indent);
+}
