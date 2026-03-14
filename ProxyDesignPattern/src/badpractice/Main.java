@@ -8,8 +8,7 @@ public class Main {
 
         System.out.println();
         System.out.println("user2 downloads the video");
-        RealVideoDownloader downloader1 = new RealVideoDownloader();
-        downloader1.downloadVideo("https://------");
+        downloader.downloadVideo("https://------");
 
     }
 }
